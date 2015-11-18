@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="UTF-8">
+<head>
+	<meta charset="UTF-8">
+	<title>DATA</title>
+</head>
+<body>
+<script type="text/javascript">
+	window.load =function(){
+		var storage = window.localStorage;
+		document.write("<table>");		
+		for (var i = 0; i<storage.length; i++) {
+		document.write("<tr>");
+		document.write("<td>");
+		document.write(storage.key(i));
+		document.write("</td>");
+		document.write("<td");
+		document.write(storage.getItem(storage.key(i)));
+		document.write("</td>");
+		document.write("</tr>");
+
+		}
+		document.write("</table>");}
+</script>
+</body>
+</html>
