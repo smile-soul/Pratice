@@ -38,6 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'learn',
+    'learn1',
+    'learn2',
+    'learn3',
+    'learn4',
+    'learn5',
+    'learn6',
 ]
 
 MIDDLEWARE_CLASSES = [
