@@ -16,8 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from learn import views as learn_views
+from learn1 import views as learn1_views
 
 urlpatterns = [
     url(r'^$', learn_views.index),
+    url(r'add/$', learn1_views.add, name = 'add'),
     url(r'^admin/', admin.site.urls),
 ]
