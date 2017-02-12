@@ -18,9 +18,13 @@ from django.contrib import admin
 from learn import views as learn_views
 from learn1 import views as learn1_views
 from learn2 import views as learn2_views
+from learn3 import views as learn3_views
+from learn4 import views as learn4_views
 
 urlpatterns = [
     url(r'^$', learn_views.index),
+    url(r'homes/$', learn4_views.home, name = 'home2'),
+    url(r'home/$', learn3_views.index, name = 'home'),
     url(r'add/$', learn1_views.add, name = 'add'),
     url(r'add/(\d+)/(\d+)/$', learn2_views.add2, name = 'add2'),
     url(r'^admin/', admin.site.urls),
