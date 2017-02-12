@@ -1,7 +1,8 @@
 #coding:utf-8
 from django.shortcuts import render
 
-def home(request):
+def index(request):
     string = u"我是好人"
-    return render(request, 'home.html', {'string': string})
+    tour = ['html', 'css', 'js']
+    return render(request, 'homes.html', {'string': string, 'tour': tour})
 #Create your views here.
