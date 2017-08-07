@@ -1,0 +1,35 @@
+Arguments: 
+  /Users/smile/.nvm/versions/node/v6.9.5/bin/node /usr/local/bin/yarn add express
+
+PATH: 
+  /Users/smile/.rvm/gems/ruby-2.4.1/bin:/Users/smile/.rvm/gems/ruby-2.4.1@global/bin:/Users/smile/.rvm/rubies/ruby-2.4.1/bin:/Users/smile/.nvm/versions/node/v6.9.5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/Users/smile/.rvm/bin
+
+Yarn version: 
+  0.24.5
+
+Node version: 
+  6.9.5
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "online",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: http://registry.npmjs.org/express: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/lib/node_modules/yarn/node_modules/request/request.js:852:19)
+      at ontimeout (timers.js:365:14)
+      at tryOnTimeout (timers.js:237:5)
+      at Timer.listOnTimeout (timers.js:207:5)

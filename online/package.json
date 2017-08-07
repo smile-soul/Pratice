@@ -1,0 +1,11 @@
+{
+  "name": "online",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.15.4",
+    "koa": "^2.3.0",
+    "socket.io": "^2.0.3"
+  }
+}
