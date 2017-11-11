@@ -1,4 +1,3 @@
-;
 function create(config) {
     console.log(config.color);
 }
