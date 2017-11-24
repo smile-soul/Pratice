@@ -460,6 +460,8 @@ Iterable	../lib/python2.7/_abcoll.py	/^class Iterable:$/;"	kind:class	line:55
 IterableUserDict	../lib/python2.7/UserDict.py	/^class IterableUserDict(UserDict):$/;"	kind:class	line:112
 Iterator	../lib/python2.7/_abcoll.py	/^class Iterator(Iterable):$/;"	kind:class	line:73
 JUMP	../lib/python2.7/sre_constants.py	/^JUMP = "jump"$/;"	kind:variable	line:51
+Keys	../demo/demo.py	/^from selenium.webdriver.common.keys import Keys$/;"	kind:namespace	line:2
+Keys	../sele.py	/^from selenium.webdriver.common.keys import Keys$/;"	kind:namespace	line:2
 KeysView	../lib/python2.7/_abcoll.py	/^class KeysView(MappingView, Set):$/;"	kind:class	line:443
 LC_ALL	../lib/python2.7/locale.py	/^    LC_ALL = 6$/;"	kind:variable	line:52
 LC_COLLATE	../lib/python2.7/locale.py	/^    LC_COLLATE = 3$/;"	kind:variable	line:53
@@ -1567,6 +1569,7 @@ commonprefix	../lib/python2.7/genericpath.py	/^def commonprefix(m):$/;"	kind:fun
 compile	../lib/python2.7/re.py	/^def compile(pattern, flags=0):$/;"	kind:function	line:192
 compile	../lib/python2.7/sre_compile.py	/^def compile(p, flags=0):$/;"	kind:function	line:567
 constructor	../lib/python2.7/copy_reg.py	/^def constructor(object):$/;"	kind:function	line:27
+cookie	../demo/demo.py	/^cookie = {'name':'access_token','value':'4cbe0dc8-1bf0-4efa-962a-6d54b74c1b9c'}$/;"	kind:variable	line:5
 copy	../lib/python2.7/UserDict.py	/^        import copy$/;"	kind:namespace	line:47
 copy	../lib/python2.7/UserDict.py	/^    def copy(self):$/;"	kind:member	line:44
 copy	../lib/python2.7/_weakrefset.py	/^    def copy(self):$/;"	kind:member	line:93
@@ -1929,6 +1932,7 @@ defpath	../lib/python2.7/ntpath.py	/^    defpath = '\\\\Windows'$/;"	kind:variab
 defpath	../lib/python2.7/ntpath.py	/^defpath = '.;C:\\\\bin'$/;"	kind:variable	line:31
 defpath	../lib/python2.7/os.py	/^from os.path import (curdir, pardir, sep, pathsep, defpath, extsep, altsep,$/;"	kind:namespace	line:120
 defpath	../lib/python2.7/posixpath.py	/^defpath = ':\/bin:\/usr\/bin'$/;"	kind:variable	line:35
+demo.py	../demo/demo.py	1;"	kind:file	line:1
 devnull	../lib/python2.7/ntpath.py	/^devnull = 'nul'$/;"	kind:variable	line:37
 devnull	../lib/python2.7/posixpath.py	/^devnull = '\/dev\/null'$/;"	kind:variable	line:37
 difference	../lib/python2.7/_weakrefset.py	/^    def difference(self, other):$/;"	kind:member	line:128
@@ -1943,8 +1947,14 @@ dispatch_table	../lib/python2.7/copy_reg.py	/^dispatch_table = {}$/;"	kind:varia
 dist	../lib/python2.7/distutils/__init__.py	/^from distutils import dist, sysconfig$/;"	kind:namespace	line:25
 distutils_path	../lib/python2.7/distutils/__init__.py	/^distutils_path = os.path.join(os.path.dirname(opcode.__file__), 'distutils')$/;"	kind:variable	line:11
 dots	../lib/python2.7/encodings/idna.py	/^dots = re.compile(u"[\\u002E\\u3002\\uFF0E\\uFF61]")$/;"	kind:variable	line:7
+driver	../demo/demo.py	/^driver = webdriver.Firefox()$/;"	kind:variable	line:4
+driver	../sele.py	/^driver = webdriver.Firefox()$/;"	kind:variable	line:4
 dump	../lib/python2.7/sre_constants.py	/^    def dump(f, d, prefix):$/;"	kind:function	line:222
 dump	../lib/python2.7/sre_parse.py	/^    def dump(self, level=0):$/;"	kind:member	line:99
+elem	../demo/demo.py	/^elem = driver.find_element_by_class_name("m-wrap")$/;"	kind:variable	line:8
+elem	../sele.py	/^elem = driver.find_element_by_id("kw")$/;"	kind:variable	line:6
+elemm	../demo/demo.py	/^elemm = driver.find_element_by_class_name("btn")$/;"	kind:variable	line:13
+elems	../demo/demo.py	/^elems= driver.find_element_by_id("password")$/;"	kind:variable	line:10
 encode	../lib/python2.7/codecs.py	/^    def encode(self, input, errors='strict'):$/;"	kind:member	line:132
 encode	../lib/python2.7/codecs.py	/^    def encode(self, input, final=False):$/;"	kind:member	line:191
 encode	../lib/python2.7/codecs.py	/^    def encode(self, input, final=False):$/;"	kind:member	line:229
@@ -2966,6 +2976,8 @@ warnings	../lib/python2.7/sre_parse.py	/^        import warnings$/;"	kind:namesp
 warnings.py	../lib/python2.7/warnings.py	1;"	kind:file	line:1
 warnpy3k	../lib/python2.7/warnings.py	/^def warnpy3k(message, category=None, stacklevel=1):$/;"	kind:function	line:15
 we	../lib/python2.7/distutils/__init__.py	/^import opcode # opcode is not a virtualenv module, so we can use it to find the stdlib$/;"	kind:namespace	line:5
+webdriver	../demo/demo.py	/^from selenium import webdriver$/;"	kind:namespace	line:1
+webdriver	../sele.py	/^from selenium import webdriver$/;"	kind:namespace	line:1
 windows_locale	../lib/python2.7/locale.py	/^windows_locale = {$/;"	kind:variable	line:1788
 write	../lib/python2.7/codecs.py	/^    def write(self, data):$/;"	kind:member	line:704
 write	../lib/python2.7/codecs.py	/^    def write(self, data):$/;"	kind:member	line:825
