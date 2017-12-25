@@ -1,0 +1,56 @@
+kind: Deployment
+apiVersion: extensions/v1beta1
+metadata:
+  name: smile
+spec:
+  template: 
+    metadata:
+      labels:
+        name: smile
+    spec:
+      containers:
+      - name: smile
+        image: registry.cn-hangzhou.aliyuncs.com/smilesoul/smile:latest
+        imagePullPolicy: Always
+        env: 
+        - name: aa
+          value: aa
+        ports:
+        - containerPort: 80
+          protocol: TCP
+      imagePullSecrets:
+        - name: gitlab-image-secret
+  replicas: 1
+  paused: false 
+  revisionHistoryLimit: 2
+  minReadySeconds: 0
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: smile
+spec:
+  selector:
+    app: smile
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80
+    targetPort: 80
+  type: LoadBalancer
+  externalIPs:
+  - 121.42.163.236
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: smile
+spec:
+  rules:
+  - host: aa.smilesoul.top
+    http:
+      paths:
+      - backend:
+          serviceName: smile
+          servicePort: 80
+
